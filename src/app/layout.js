@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from "./providers";
 // import NextTopLoader from 'nextjs-toploader';
-import Search from '@/components/search/Search'
+// import Search from '@/components/search/Search'
 import GoToTop from '@/components/GoToTop';
 import localFont from 'next/font/local';
 import Footer from '@/components/Footer';
@@ -99,7 +99,7 @@ export default async function RootLayout({ children }) {
         <Providers session={session}>
           <Toaster richColors={true} closeButton={true} theme="dark" />
           {/* <NextTopLoader color="#CA1313" className="z-[99999]" /> */}
-          <Search />
+          {/* <Search /> */}
           <Changelogs />
           {children}
           <FloatingButton />

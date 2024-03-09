@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../../styles/Catalog.module.css';
 import { Accordion, AccordionItem, Select, SelectItem, RadioGroup, Radio, Input } from "@nextui-org/react";
 import { seasonOptions, genreOptions, tagsOptions, formatOptions, yearOptions, sortbyOptions, airingOptions } from './options';
-import { Combobox, Transition } from '@headlessui/react'
+// import { Combobox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import Searchcard from './Searchcard';
 
@@ -119,7 +119,7 @@ function Catalog({searchParams}) {
                 </div>
                 {showTopBottom && <>
                     <div className={styles.toptwo}>
-                        <div className={styles.genres}>
+                        {/* <div className={styles.genres}>
                             <h3 className={styles.searchlabel}>Genres</h3>
                             <Combobox value={genrevalue} onChange={setGenrevalue} multiple>
                                 <div className="relative w-full cursor-default overflow-hidden rounded-[0.6rem] text-left shadow-md focus:outline-none sm:text-sm">
@@ -216,7 +216,7 @@ function Catalog({searchParams}) {
                                     </Combobox.Options>
                                 </Transition>
                             </Combobox>
-                        </div>
+                        </div> */}
                         <div className={styles.catalogsort}>
                             <h3 className={styles.searchlabel}>Sort by</h3>
                             <Select
